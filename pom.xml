@@ -7,6 +7,13 @@
 	<version>0.1.0</version>
 	<packaging>jar</packaging>
 	<name>FCM XMPP Server</name>
+	<distributionManagement>
+	    <repository>
+	           <id>xmppserver2</id>
+	           <name>FCM XMPP Server</name>
+	           <url>${mavendir}</url>
+	    </repository>
+    </distributionManagement>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -52,7 +59,6 @@
 					<target>${java.version}</target>
 				</configuration>
 			</plugin>
-
 		</plugins>
 	</build>
 </project>
