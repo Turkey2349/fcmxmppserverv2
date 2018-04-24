@@ -2,10 +2,30 @@
 All notable changes to the fcm xmpp server v2 project will be documented in this file, in a per release basis.
 
 ## [unreleased]
+**Tag**: xmpp_r1_v6
+
+### Added
+- a better solution for the connection draining (A manager class will be added)
+
+-------------------------------------------------------------------------------------
+
+## [xmpp_r1_v5] - 2018-04-24
 **Tag**: xmpp_r1_v5
 
 ### Added
-- other branch with a better solution for the connection draining until it is fully tested
+- upload formatter
+- add to the pending message list the backoff failed messages
+- handle two lists for pending messages (synMessages and pendingMessages)
+- add listeners removal when disconnect (helper method)
+- add java docs
+- java 8 optional usage
+- logback dependency for logging
+
+## Modified
+- change json simple library to jackson fasterxml
+- separate ack from send packet basic
+- ping failed listener
+- rename class MessageHelper to MessageMapper and move it to the util package
 
 -------------------------------------------------------------------------------------
 
